@@ -1,4 +1,4 @@
-# INDELpred Using Guide
+# INDELpred
 
 ## Step 1: Download ANNOVAR and Related Databases
 
