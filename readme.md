@@ -31,3 +31,11 @@ To run `INDELpred.sh`, execute the following command with your input VCF file, o
 ```bash
 sh INDELpred.sh input_vcf output_prefix ref_version[hg19/hg38]
 ```
+
+### Example Usage
+
+Here's an example command using a sample VCF file, `example.vcf`, with the output prefix `example` and using the reference version hg19:
+
+```bash
+sh INDELpred.sh example.vcf example hg19
+```
