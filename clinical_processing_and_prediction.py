@@ -88,7 +88,7 @@ column_mapping = {
 }
 total = total.rename(columns=column_mapping)
 total['Length'] = (total['REF'].str.len() - total['ALT'].str.len()).abs()
-total = total.loc[total['Length'] > 0 & total['Length'] < 100]
+total = total.loc[(total['Length'] > 0) & (total['Length'] < 100)] #changed conditional filtering 
 values_to_remove = ['nonframeshift substitution', 'frameshift substitution', 'nonsynonymous SNV', 'synonymous SNV']
 total = total[~total['ExonicFunc.refGene'].isin(values_to_remove)]
 
